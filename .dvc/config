@@ -3,3 +3,5 @@
     remote = food-dilivery-tracker
 ['remote "food-dilivery-tracker"']
     url = /home/yogesh/Dvc Store
+['remote "mybucket"']
+    url = s3://yogesh-kumar-saini

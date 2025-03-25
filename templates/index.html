@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Predictor | Future Eats</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Future Eats Delivery Predictor</h1>
+            <p>Predicting your food delivery time with AI precision</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <form id="predictionForm">
+                    <div class="form-grid">
+                        <!-- Personal Details -->
+                        <input type="text" id="id" placeholder="Order ID" required>
+                        <input type="text" id="deliveryPersonId" placeholder="Delivery Person ID" required>
+                        <input type="text" id="age" placeholder="Delivery Person Age" required>
+                        <input type="text" id="ratings" placeholder="Ratings" required>
+
+                        <!-- Location Details -->
+                        <input type="number" step="any" id="restLat" placeholder="Restaurant Latitude" required>
+                        <input type="number" step="any" id="restLong" placeholder="Restaurant Longitude" required>
+                        <input type="number" step="any" id="delLat" placeholder="Delivery Latitude" required>
+                        <input type="number" step="any" id="delLong" placeholder="Delivery Longitude" required>
+
+                        <!-- Order Details -->
+                        <input type="text" id="orderDate" placeholder="Order Date (DD-MM-YYYY)" required>
+                        <input type="text" id="timeOrdered" placeholder="Time Ordered (HH:MM)" required>
+                        <input type="text" id="timePicked" placeholder="Time Picked (HH:MM)" required>
+                        
+                        <!-- Conditions -->
+                        <select id="weather" required>
+                            <option value="">Select Weather</option>
+                            <option value="Sunny">Sunny</option>
+                            <option value="Cloudy">Cloudy</option>
+                            <option value="Rainy">Rainy</option>
+                            <option value="Stormy">Stormy</option>
+                        </select>
+                        <select id="traffic" required>
+                            <option value="">Select Traffic</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                            <option value="Jam">Jam</option>
+                        </select>
+                        <input type="number" id="vehicleCondition" placeholder="Vehicle Condition (0-3)" required>
+                        
+                        <!-- Order Type -->
+                        <select id="orderType" required>
+                            <option value="">Select Order Type</option>
+                            <option value="Snack">Snack</option>
+                            <option value="Meal">Meal</option>
+                            <option value="Drinks">Drinks</option>
+                            <option value="Buffet">Buffet</option>
+                        </select>
+                        <select id="vehicleType" required>
+                            <option value="">Select Vehicle Type</option>
+                            <option value="motorcycle">Motorcycle</option>
+                            <option value="scooter">Scooter</option>
+                            <option value="electric_scooter">Electric Scooter</option>
+                            <option value="bicycle">Bicycle</option>
+                        </select>
+                        <input type="text" id="multipleDeliveries" placeholder="Multiple Deliveries" required>
+                        <select id="festival" required>
+                            <option value="">Festival?</option>
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                        <select id="city" required>
+                            <option value="">Select City Type</option>
+                            <option value="Urban">Urban</option>
+                            <option value="Semi-Urban">Semi-Urban</option>
+                            <option value="Metropolitian">Metropolitan</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="predict-btn">Predict Delivery Time</button>
+                </form>
+            </div>
+
+            <div class="result-section">
+                <h2>Prediction Result</h2>
+                <div id="result" class="result-display">
+                    <span>Enter details to predict delivery time</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
