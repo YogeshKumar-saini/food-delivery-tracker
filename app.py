@@ -59,7 +59,7 @@ def load_transformer(transformer_path):
 
 
 
-# columns to preprocess in data
+# columns to preprocess in 
 num_cols = ["age",
             "ratings",
             "pickup_time_minutes",
