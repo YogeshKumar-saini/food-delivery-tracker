@@ -17,13 +17,11 @@ set_config(transform_output='pandas')
 import dagshub
 import mlflow.client
 
-dagshub.init(repo_owner='himanshu1703', 
-             repo_name='swiggy-delivery-time-prediction', 
-             mlflow=True)
+dagshub.init(repo_owner='YogeshKumar-saini', repo_name='food-delivery-tracker', mlflow=True)
+
 
 # set the mlflow tracking server
-mlflow.set_tracking_uri("https://dagshub.com/himanshu1703/swiggy-delivery-time-prediction.mlflow")
-
+mlflow.set_tracking_uri("https://dagshub.com/YogeshKumar-saini/food-delivery-tracker.mlflow")
 
 class Data(BaseModel):  
     ID: str
