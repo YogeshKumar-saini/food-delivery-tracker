@@ -1,2 +1,5 @@
 [core]
     autostage = true
+    remote = food-dilivery-tracker
+['remote "food-dilivery-tracker"']
+    url = /home/yogesh/Dvc Store
